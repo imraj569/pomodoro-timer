@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <video class="background-video" autoplay loop muted playsinline>
+    <source src="https://raw.githubusercontent.com/imraj569/pomodoro-timer/main/background%20video.mp4" type="video/mp4">
+  </video>
+
+  <!-- Background Sea Sound -->
+  <audio id="sea-audio" autoplay loop>
+    <source src="https://raw.githubusercontent.com/imraj569/pomodoro-timer/main/sea-waves.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container" id="container">
+    <h1>Pomodoro Timer</h1>
+
+    <div class="timer">
+      <p id="timer-label">Focus Time</p>
+      <span id="time">25:00</span>
+      <div class="buttons">
+        <button class="button" onclick="startTimer()">Start</button>
+        <button class="button" onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+
+    <div class="stats">
+      <h2>Productivity Stats</h2>
+      <p>Completed Sessions: <span id="sessions">0</span></p>
+      <p>Focused Minutes: <span id="focused-minutes">0</span></p>
+      <p>Breaks Taken: <span id="breaks">0</span></p>
+    </div>
+
+    <!-- Mute Button for Sea Sound -->
+    <button class="button" id="mute-button" onclick="toggleMute()">Mute Sound</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
