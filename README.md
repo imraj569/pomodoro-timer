@@ -1,7 +1,7 @@
 
 ---
 
-# Pomodoro Timer with Background Video and Sea Sound - visit on
+# Pomodoro Timer with Background Video and Sea Sound 
 https://imraj569.github.io/pomodoro-timer/
 
 This is a simple Pomodoro timer that features a customizable timer interface, a background video playing in a loop, and an ambient sea sound for a relaxing experience. Users can start, reset the timer, and mute or unmute the background sound.
